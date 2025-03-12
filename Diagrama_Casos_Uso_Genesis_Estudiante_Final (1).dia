@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:layer name="Capa 1">
+
+    <!-- Definir actor Estudiante -->
+    <dia:object type="UML - Actor" version="0" id="Actor1">
+      <dia:attribute name="name"><dia:string>Estudiante</dia:string></dia:attribute>
+      <dia:attribute name="position"><dia:point val="2,5"/></dia:attribute>
+    </dia:object>
+
+    <!-- Definir Casos de Uso -->
+    <dia:object type="UML - UseCase" version="0" id="UC1">
+      <dia:attribute name="name"><dia:string>Iniciar Sesión</dia:string></dia:attribute>
+      <dia:attribute name="position"><dia:point val="5,2"/></dia:attribute>
+    </dia:object>
+
+    <dia:object type="UML - UseCase" version="0" id="UC2">
+      <dia:attribute name="name"><dia:string>Consultar Notas</dia:string></dia:attribute>
+      <dia:attribute name="position"><dia:point val="5,4"/></dia:attribute>
+    </dia:object>
+
+    <dia:object type="UML - UseCase" version="0" id="UC3">
+      <dia:attribute name="name"><dia:string>Inscribir Materias</dia:string></dia:attribute>
+      <dia:attribute name="position"><dia:point val="5,6"/></dia:attribute>
+    </dia:object>
+
+    <dia:object type="UML - UseCase" version="0" id="UC4">
+      <dia:attribute name="name"><dia:string>Generar Recibo de Pago</dia:string></dia:attribute>
+      <dia:attribute name="position"><dia:point val="5,8"/></dia:attribute>
+    </dia:object>
+
+    <!-- Relaciones entre Actor y Casos de Uso -->
+    <dia:object type="UML - Association" version="0" id="Assoc1">
+      <dia:connections>
+        <dia:connection handle="0" to="Actor1" to_handle="0"/>
+        <dia:connection handle="1" to="UC1" to_handle="0"/>
+      </dia:connections>
+    </dia:object>
+
+    <dia:object type="UML - Association" version="0" id="Assoc2">
+      <dia:connections>
+        <dia:connection handle="0" to="Actor1" to_handle="0"/>
+        <dia:connection handle="1" to="UC2" to_handle="0"/>
+      </dia:connections>
+    </dia:object>
+
+    <dia:object type="UML - Association" version="0" id="Assoc3">
+      <dia:connections>
+        <dia:connection handle="0" to="Actor1" to_handle="0"/>
+        <dia:connection handle="1" to="UC3" to_handle="0"/>
+      </dia:connections>
+    </dia:object>
+
+    <dia:object type="UML - Association" version="0" id="Assoc4">
+      <dia:connections>
+        <dia:connection handle="0" to="Actor1" to_handle="0"/>
+        <dia:connection handle="1" to="UC4" to_handle="0"/>
+      </dia:connections>
+    </dia:object>
+
+  </dia:layer>
+</dia:diagram>
