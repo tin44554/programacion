@@ -1,0 +1,6 @@
+class perro:
+    def __init__ (self, nombre, raza):
+        print (f"el nombre de mi perro es {nombre}, de raza {raza}")
+        self.nombre=nombre
+        self.raza=raza
+perro1 = perro ("esparki","golden retriever")
